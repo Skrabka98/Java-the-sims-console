@@ -1,4 +1,4 @@
 package Statistic;
 
-public class Stench {
+public class Stench extends Statistic {
 }

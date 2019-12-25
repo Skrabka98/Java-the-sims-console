@@ -1,4 +1,4 @@
 package Statistic;
 
-public class Hungry {
+public class Hungry extends Statistic {
 }

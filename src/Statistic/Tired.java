@@ -1,4 +1,5 @@
 package Statistic;
 
-public class Tired {
+public class Tired extends Statistic{
+
 }

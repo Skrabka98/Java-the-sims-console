@@ -1,15 +1,9 @@
-package Shop.Food;
 
- abstract public class Food {
-    private String name;
-    private int numberOfPoints;
+ package Shop.Food;
 
-    Food(String name, int numberOfPoints){
-        this.name=name;
-        this.numberOfPoints=numberOfPoints;
-    }
+abstract public class Food {
 
-    abstract public void addPointsOfLive();
+
 
 
 }

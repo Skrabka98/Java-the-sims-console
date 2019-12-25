@@ -1,4 +1,4 @@
 package Statistic;
 
-public class Hp {
+public class Hp extends Statistic {
 }
