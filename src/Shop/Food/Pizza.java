@@ -9,6 +9,9 @@ public class Pizza extends Items {
     }
 
     @Override
+    private void buyPizza(price){
+
+    }
     public void ProduktDescription() {
         System.out.println();
     }
