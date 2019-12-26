@@ -8,10 +8,13 @@ public class Pizza extends Items {
         super( numberOfPoints, price);
     }
 
-    @Override
-    private void buyPizza(price){
+
+
+    public void buyPizza(double price){
 
     }
+
+    @Override
     public void ProduktDescription() {
         System.out.println();
     }

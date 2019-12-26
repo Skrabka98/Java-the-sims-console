@@ -3,25 +3,25 @@ package Game;
 public class Time {
     private int hour=6;
     private int day=0;
-    private int time;
+    private int time; //do czego to?
     public Time(){
         this.hour=hour;
         this.day=day;
     }
     private boolean timeOfDay(){ //sprawdze czy dzień czy noc
-        if((time>6)&&(time<23))
-            return 1;
+        if((this.hour>6)&&(this.hour<23))
+            return true;
         else{
-            return 0;
+            return false;
         }
     }
     private void setDay(){
-        if(hour>=24){
-            hour=hour-24;
-            day++;
+        if(this.hour>=24){
+            this.hour=this.hour-24;
+            this.day++;
         }
     }
-    public void addTime(time){
+    public void addTime(int time){
         hour+=time;
     }
 
