@@ -1,7 +1,7 @@
 package Game;
 
 public class Time {
-    private int hour=6;
+    private int hour=6;//czemu 6?
     private int day=0;
     private int time; //do czego to?
     public Time(){
@@ -23,6 +23,8 @@ public class Time {
     }
     public void addTime(int time){
         hour+=time;
+        setDay();
+        timeOfDay();
     }
 
 }
