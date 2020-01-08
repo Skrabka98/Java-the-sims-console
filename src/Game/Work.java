@@ -11,8 +11,8 @@ public class Work {
     this.time = new Time();
   }
 
-  public void Working(){
-    if
+  public void wrking(){
+
   }
 
 }

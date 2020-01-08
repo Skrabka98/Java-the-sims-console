@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be9c0bcc-9b80-4ff2-938a-c38e4149df79" name="Default Changelist" comment="" />
+    <list default="true" id="8a40e775-8164-4dbc-ad2d-d9c3e35359f1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1W7WoDDlnz9B4eVHhYQnc0iuuN3" />
+  <component name="ProjectId" id="1VXC8uTsHDAAVx5lCBXtT7JZtfq" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,31 +26,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="projekt-master" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\barti\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be9c0bcc-9b80-4ff2-938a-c38e4149df79" name="Default Changelist" comment="" />
-      <created>1578501285361</created>
+      <changelist id="8a40e775-8164-4dbc-ad2d-d9c3e35359f1" name="Default Changelist" comment="" />
+      <created>1577389896161</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578501285361</updated>
-      <workItem from="1578501286657" duration="10773000" />
+      <updated>1577389896161</updated>
+      <workItem from="1577389897498" duration="3121000" />
     </task>
     <servers />
   </component>
