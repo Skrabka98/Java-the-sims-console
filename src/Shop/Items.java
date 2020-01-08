@@ -1,9 +1,11 @@
 package Shop;
 
 
-abstract public class Items {
-    private int numberOfPoints;
-    private double price;
+import Shop.Interfaces.ItemsInterfaces;
+
+abstract public class Items implements ItemsInterfaces {
+    private int numberOfPoints=1;
+    private double price=1;
 
 
     public Items(int numberOfPoints, double price)
@@ -12,11 +14,7 @@ abstract public class Items {
         this.price=price;
     }
 
-    public abstract void ProduktDescription();
 
-    private String getName() {
-        return getClass().getSimpleName();
-    }
-
+    public abstract void productDescription();
 
 }

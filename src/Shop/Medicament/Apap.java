@@ -1,5 +1,6 @@
 package Shop.Medicament;
 
+
 import Shop.Items;
 
 public class Apap extends Items {
@@ -8,8 +9,16 @@ public class Apap extends Items {
         super( numberOfPoints, price);
     }
 
+    public int setNumberOfPoints(){
+        return 10;
+    }
+    public double setPrice(){
+        return 15.99;
+    }
+
+
     @Override
-    public void ProduktDescription() {
+    public void productDescription() {
         System.out.println();
     }
 

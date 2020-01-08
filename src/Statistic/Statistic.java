@@ -1,19 +1,19 @@
 package Statistic;
 
-public class Statistic {
+abstract public class Statistic {
 
     private final int maxPoint ;
     private final int minPoint ;
     private int numberOfPoint ;
 
-    public Statistic(int maxPoint, int minPoint){
+    public Statistic(int maxPoint, int minPoint, int numberOfPoint){
         this.maxPoint = 100;
         this.minPoint = 0;
-        this.numberOfPoint = maxPoint;
+        this.numberOfPoint = 20;
     }
 
 
-    public int AddingPoint (double numberOfPoint) {
+    public int addPoint (double numberOfPoint) {
         this.numberOfPoint += numberOfPoint;
         if(this.numberOfPoint>= maxPoint){
             return maxPoint;
@@ -22,7 +22,7 @@ public class Statistic {
         }
     }
 
-    public int LoosOfPoints(double numberOfPoint){
+    public int loosOfPoints(double numberOfPoint){
         this.numberOfPoint-= numberOfPoint;
         if(this.numberOfPoint<= minPoint){
             return minPoint;

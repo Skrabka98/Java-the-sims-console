@@ -11,11 +11,11 @@ public class Money {
         return this.money;
     }
 
-    public void Salary(double salary) {
+    public void salary(double salary) {
         this.money += salary;
     }
 
-    public void Shopping(double price){
+    public void shopping(double price){
         this.money-=price;
     }
 

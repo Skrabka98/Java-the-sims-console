@@ -1,31 +1,34 @@
 package Shop;
 
-import Game.Money;
+import Shop.Food.Supermarket;
+import Shop.Medicament.Pharmacy;
+
+import java.util.Scanner;
 
 public class Buy {
-    private double price;
-    private Money money;
+    private int chose;
+    Supermarket supermarket;
+    Pharmacy pharmacy;
 
     public Buy(){
-        this.price=price;
-        this.money= new Money();
+        this.chose=chose;
     }
 
-    public void Buing(){
-        this.money.Shopping(this.price);
-        /*
-        tej metody nie bedzie jak bedzie ta na dole tylko środek będzie się stosowac
-        chociaz w sumie już sama nie wiem czy nie lepiej tutaj stworzyc tą metoe do odejmowania kasy
-
-         */
+    public void buying(){
+        System.out.println("1.Biedra\n2.Apteka");
+        Scanner sc=new Scanner(System.in);
+        this.chose=sc.nextInt();
+        switch (chose){
+            case 1:{
+                supermarket.choseProduct();
+                break;
+            }
+            case 2:{
+               pharmacy.choseProduct();
+            }
+        }
     }
 
-    public void BuyProduct(){
-        /*
-        Ta metoda w mojej głowie ma pozwalć wybrac jaki produkt kupujesz
-        a że uzytkownik ma to wybierac więc nie mam pojęcia jak to ma działać
 
-         */
-    }
 
 }
