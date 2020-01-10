@@ -17,8 +17,15 @@
 
 
 
+
   Supermarket(){
    this.chose=chose;
+   this.chips = new Chips();
+   this.cola = new Cola();
+   this.pizza = new Pizza();
+   this.hungry = new Hungry();
+   this.money = new Money();
+
   }
 
   public void choseProduct(){
@@ -31,7 +38,7 @@
      {
       hungry.addPoint(chips.setNumberOfPoints());
       money.shopping(chips.setPrice());
-      System.out.println("Mnam mniam");
+      System.out.println("Grr");
       break;
      }
     case 2:

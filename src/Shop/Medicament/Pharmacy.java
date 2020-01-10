@@ -7,13 +7,17 @@ import java.util.Scanner;
 
 public class Pharmacy {
     public int chose;
-    Apap apap;
+    Apap apap ;
     Bandage bandage;
     Hp hp;
     Money money;
 
     public Pharmacy(){
         this.chose=1;
+        this.apap = new Apap();
+        this.hp = new Hp();
+        this.money = new Money();
+        this.bandage= new Bandage();
     }
 
     public void choseProduct(){
@@ -23,16 +27,16 @@ public class Pharmacy {
         switch (chose){
             case 1 :
             {
-                hp.addPoint(apap.setNumberOfPoints());
-                money.shopping(apap.setPrice());
-                System.out.println("Mnam mniam");
+                this.hp.addPoint(this.apap.setNumberOfPoints());
+                this.money.shopping(this.apap.setPrice());
+                System.out.println("Dynamite!");
                 break;
             }
             case 2:
             {
                 hp.addPoint(bandage.setNumberOfPoints());
                 money.shopping(bandage.setPrice());
-                System.out.println("Mlask mlask");
+                System.out.println("Ałaaa");
                 break;
             }
         }

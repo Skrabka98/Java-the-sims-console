@@ -9,6 +9,10 @@ public class Pizza extends Items  {
         super( numberOfPoints, price);
     }
 
+    public Pizza (){
+        super(0,0);
+    }
+
     public int setNumberOfPoints(){
         return 20;
     }

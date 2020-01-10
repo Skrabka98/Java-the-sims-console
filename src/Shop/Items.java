@@ -1,9 +1,10 @@
 package Shop;
 
 
-import Shop.Interfaces.ItemsInterfaces;
+import Interfaces.SetNumberOfPoints;
+import Interfaces.SetPrice;
 
-abstract public class Items implements ItemsInterfaces {
+abstract public class Items implements SetNumberOfPoints, SetPrice {
     private int numberOfPoints=1;
     private double price=1;
 

@@ -9,6 +9,10 @@ public class Apap extends Items {
         super( numberOfPoints, price);
     }
 
+    public Apap(){
+        super(0,0);
+    }
+
     public int setNumberOfPoints(){
         return 10;
     }
