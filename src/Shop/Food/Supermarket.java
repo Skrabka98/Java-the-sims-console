@@ -2,6 +2,7 @@
  package Shop.Food;
 
  import Game.Money;
+ import Shop.Buy;
  import Statistic.Hungry;
 
  import java.util.Scanner;
@@ -18,7 +19,7 @@
 
 
 
-  Supermarket(){
+  public Supermarket(){
    this.chose=chose;
    this.chips = new Chips();
    this.cola = new Cola();
@@ -33,26 +34,40 @@
    Scanner sc=new Scanner(System.in);
    this.chose=sc.nextInt();
 
+
    switch (chose){
     case 1 :
      {
       hungry.addPoint(chips.setNumberOfPoints());
       money.shopping(chips.setPrice());
       System.out.println("Grr");
-      break;
+      Buy buy = new Buy();
+      buy.buying();
      }
     case 2:
     {
      hungry.addPoint(cola.setNumberOfPoints());
      money.shopping(cola.setPrice());
      System.out.println("Mlask mlask");
-     break;
+     Buy buy = new Buy();
+     buy.buying();
+
     }
     case 3: {
      hungry.addPoint(pizza.setNumberOfPoints());
      money.shopping(pizza.setPrice());
      System.out.println("Mnam mniam");
-     break;
+     Buy buy = new Buy();
+     buy.buying();
+
+    }
+    case 4:
+    {
+     Buy buy = new Buy();
+     buy.buying();
+    }
+    default:{
+     System.out.println("Błędny przycisk!");
     }
     }
    }

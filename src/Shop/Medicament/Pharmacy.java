@@ -1,6 +1,7 @@
 package Shop.Medicament;
 
 import Game.Money;
+import Shop.Buy;
 import Statistic.Hp;
 
 import java.util.Scanner;
@@ -18,6 +19,7 @@ public class Pharmacy {
         this.hp = new Hp();
         this.money = new Money();
         this.bandage= new Bandage();
+
     }
 
     public void choseProduct(){
@@ -30,14 +32,26 @@ public class Pharmacy {
                 this.hp.addPoint(this.apap.setNumberOfPoints());
                 this.money.shopping(this.apap.setPrice());
                 System.out.println("Dynamite!");
-                break;
+                Buy buy = new Buy();
+                buy.buying();
+
             }
             case 2:
             {
                 hp.addPoint(bandage.setNumberOfPoints());
                 money.shopping(bandage.setPrice());
                 System.out.println("Ałaaa");
-                break;
+                Buy buy = new Buy();
+                buy.buying();
+
+            }
+            case 3:
+            {
+                Buy buy = new Buy();
+                buy.buying();
+            }
+            default:{
+                System.out.println("Błędny przycisk!");
             }
         }
     }
