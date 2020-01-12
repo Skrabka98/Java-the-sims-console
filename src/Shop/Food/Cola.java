@@ -9,6 +9,10 @@ public class Cola extends Items  {
         super( numberOfPoints, price);
     }
 
+    public Cola(){
+        super(0,0);
+    }
+
     public int setNumberOfPoints(){
         return 10;
     }

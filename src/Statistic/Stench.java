@@ -2,6 +2,11 @@ package Statistic;
 
 public class Stench extends Statistic  {
 
-    public Stench (int maxPoint, int minPoint, int numberOfPoint){
-        super(maxPoint, minPoint, numberOfPoint);}
+    public Stench ( int numberOfPoint){
+        super(numberOfPoint);}
+
+    public Stench(){
+        super (0);
+    }
+
 }

@@ -5,8 +5,12 @@ import Shop.Items;
 
 public class Chips extends Items  {
 
-    public Chips(int numberOfPoints,double price){
+     public Chips(int numberOfPoints,double price){
         super( numberOfPoints, price);
+    }
+
+    public Chips(){
+         super(0,0);
     }
 
     public int setNumberOfPoints(){
