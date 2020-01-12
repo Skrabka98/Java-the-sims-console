@@ -54,6 +54,16 @@ public class Work {
     return this.accidentAtWork;
   }
 
+  public void workingHours(int choiceHoursWork){
+    if(choiceHoursWork == 4){
+      workingHalfTime();
+    }else (choiceHoursWork == 8){
+      workingFullTime();
+    }else{
+      System.out.println("Moiżesz iść do pracy tylko na cztey lub dwie godziny");
+    }
+  }
+
 
 
 }
