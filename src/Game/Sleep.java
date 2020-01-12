@@ -11,9 +11,9 @@ public class Sleep implements SetNumberOfPoints {
 
     private Scanner scanner;
     private int numberOfSleep;
-    Tired tired;
-    Stench stench;
-    Hungry hungry;
+    private  Tired tired;
+    private Stench stench;
+    private Hungry hungry;
 
     public Sleep (){
      this.scanner=new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Sleep implements SetNumberOfPoints {
 
     public  int setNumberOfPoints(){
         return 5;
-    }
+    } // iość punktów o jaką jest zwiększany sen na godzinę
 
     public void sleepRequst(){
         System.out.println("Ile godzin snu?");

@@ -43,6 +43,7 @@
       System.out.println("Grr");
       Buy buy = new Buy();
       buy.buying();
+      break;
      }
     case 2:
     {
@@ -51,7 +52,7 @@
      System.out.println("Mlask mlask");
      Buy buy = new Buy();
      buy.buying();
-
+     break;
     }
     case 3: {
      hungry.addPoint(pizza.setNumberOfPoints());
@@ -59,12 +60,13 @@
      System.out.println("Mnam mniam");
      Buy buy = new Buy();
      buy.buying();
-
+     break;
     }
     case 4:
     {
      Buy buy = new Buy();
      buy.buying();
+     break;
     }
     default:{
      System.out.println("Błędny przycisk!");

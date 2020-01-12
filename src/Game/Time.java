@@ -8,7 +8,7 @@ public class Time {
         this.hour=hour;
         this.day=day;
     }
-    private boolean timeOfDay(){ //sprawdze czy dzień czy noc
+    private boolean timeOfDay(){ //sprawdza czy dzień czy noc
         if((this.hour>6)&&(this.hour<23))
             return true;
         else{

@@ -20,6 +20,4 @@ public class Money {
     }
 
 }
-/*
-Nrarazie umieściąłm tutaj bo nie wiem gdzie a zawsze można ja wrzucic gdzie indziej
- */
+

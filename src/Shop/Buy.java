@@ -27,6 +27,7 @@ public class Buy {
             }
             case 2:{
                pharmacy.choseProduct();
+               break;
             }
             case 3:
             {

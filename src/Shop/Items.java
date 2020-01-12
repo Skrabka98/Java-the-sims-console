@@ -5,8 +5,8 @@ import Interfaces.SetNumberOfPoints;
 import Interfaces.SetPrice;
 
 abstract public class Items implements SetNumberOfPoints, SetPrice {
-    private int numberOfPoints=1;
-    private double price=1;
+    private int numberOfPoints=0;
+    private double price=0;
 
 
     public Items(int numberOfPoints, double price)
