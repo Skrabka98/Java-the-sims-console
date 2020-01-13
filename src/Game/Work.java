@@ -57,8 +57,10 @@ public class Work {
   public void workingHours(int choiceHoursWork){
     if(choiceHoursWork == 4){
       workingHalfTime();
-    }else (choiceHoursWork == 8){
+        System.out.println("Idziesz do parcy na 4h");
+    }else if (choiceHoursWork == 8){
       workingFullTime();
+        System.out.println("Idziesz do pracy na 8h");
     }else{
       System.out.println("Moiżesz iść do pracy tylko na cztey lub dwie godziny");
     }

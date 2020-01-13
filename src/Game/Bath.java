@@ -14,10 +14,10 @@ public class Bath implements SetNumberOfPoints {
         return 100;
     }
 
-    public void timeBatch(){
+    public void batch(){
+        setNumberOfPoints();
         time.addTime(2);
     }
-
 
 
 

@@ -10,11 +10,12 @@
 
  public class Supermarket {
   private int chose;
-  Chips chips;
-  Cola cola;
-  Money money;
-  Hungry hungry;
-  Pizza pizza;
+  private Chips chips;
+  private Cola cola;
+  private Money money;
+  private Hungry hungry;
+  private Pizza pizza;
+
 
 
 
@@ -30,7 +31,7 @@
   }
 
   public void choseProduct(){
-   System.out.println("1.chips\n2.cola\n3.pizza");
+   System.out.println("1.chips\n2.cola\n3.pizza\n4.Powrót ");
    Scanner sc=new Scanner(System.in);
    this.chose=sc.nextInt();
 
@@ -41,8 +42,7 @@
       hungry.addPoint(chips.setNumberOfPoints());
       money.shopping(chips.setPrice());
       System.out.println("Grr");
-      Buy buy = new Buy();
-      buy.buying();
+      choseProduct();
       break;
      }
     case 2:
@@ -50,16 +50,14 @@
      hungry.addPoint(cola.setNumberOfPoints());
      money.shopping(cola.setPrice());
      System.out.println("Mlask mlask");
-     Buy buy = new Buy();
-     buy.buying();
+     choseProduct();
      break;
     }
     case 3: {
      hungry.addPoint(pizza.setNumberOfPoints());
      money.shopping(pizza.setPrice());
      System.out.println("Mnam mniam");
-     Buy buy = new Buy();
-     buy.buying();
+     choseProduct();
      break;
     }
     case 4:
