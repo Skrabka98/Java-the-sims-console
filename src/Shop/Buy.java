@@ -1,5 +1,6 @@
 package Shop;
 
+import Game.Player;
 import Shop.Food.Supermarket;
 import Shop.Medicament.Pharmacy;
 
@@ -7,30 +8,37 @@ import java.util.Scanner;
 
 public class Buy {
     private int choseing;
-    Supermarket supermarket;
-    Pharmacy pharmacy;
+    private Supermarket supermarket;
+    private Pharmacy pharmacy;
+    Player player;
 
     public Buy(){
         this.choseing=choseing;
         this.supermarket = new Supermarket();
         this.pharmacy = new Pharmacy();
+
+
     }
 
     public void buying(){
-        System.out.println("1.Biedra\n2.Apteka");
+        System.out.println("1.Biedra\n2.Apteka\n3.Powrót");
         Scanner sc=new Scanner(System.in);
         this.choseing=sc.nextInt();
         switch (choseing){
             case 1:{
                 supermarket.choseProduct();
+                buying();
                 break;
             }
             case 2:{
                pharmacy.choseProduct();
+               buying();
+               break;
             }
             case 3:
             {
-                //wyjscie ze sklepu do menu
+               player = new Player();
+               player.menuPlayer();
             }
             default:{
                 System.out.println("Błędny przycisk!");
