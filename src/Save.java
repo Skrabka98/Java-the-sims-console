@@ -25,7 +25,7 @@ public class Save {
         this.tired = new Tired();
     }
 
-    public void write(){
+   /* public void write(){
         try{
             FileOutputStream fileOutputStream = new FileOutputStream(new File("save.txt"));
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -52,11 +52,11 @@ public class Save {
             FileOutputStream fileOutputStream = new FileOutputStream(new File("save.txt"));
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
-            objectOutputStream.
+          //  objectOutputStream.
 
 
-            objectOutputStream.close();
-            fileOutputStream.close();
+           // objectOutputStream.close();
+         //   fileOutputStream.close();
 
         }catch (FileNotFoundException e ){
             System.out.println("Nie znaleziono pliku");
@@ -65,7 +65,7 @@ public class Save {
         }catch (ClassNotFoundException e){
             e.printStackTrace();
         }
-    }
+    }*/
 
 
 

@@ -27,7 +27,7 @@ public class Player {
     }
 
     public void menuPlayer(){
-        System.out.println("1.Praca\n2.Sen\n3.Kompiel\n4.Sklep\n5.jeszcze nie wiem");
+        System.out.println("1.Praca\n2.Sen\n3.Kąpiel\n4.Sklep\n5.jeszcze nie wiem");
         this.whatDoYouDo = scan.nextInt();
         switch(this.whatDoYouDo){
             case 1 :{
@@ -51,6 +51,7 @@ public class Player {
             }
             case 4 :{
                this.buy.buying();
+               menuPlayer();
                break;
             }
 
