@@ -1,0 +1,65 @@
+*
+    public void write(){
+        /*try{
+            FileOutputStream fileOutputStream = new FileOutputStream(new File("save.txt"));
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            objectOutputStream.writeObject(this.hungry.getNumberOfPoint());
+            /*objectOutputStream.writeObject(hp);
+            objectOutputStream.writeObject(money);
+            objectOutputStream.writeObject(stench);
+            objectOutputStream.writeObject(time);
+            objectOutputStream.writeObject(tired);
+             objectOutputStream.close();
+             fileOutputStream.close();
+
+        }catch (FileNotFoundException e ){
+            System.out.println("Nie znaleziono pliku");
+        }catch (IOException e) {
+            System.out.println("Błąd  czegoś tam pytać Bartka");
+        }
+        try {
+            Hungry mb = new Hungry();
+
+             write object to file
+            FileOutputStream fos = new FileOutputStream("save.txt");
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(mb);
+            oos.close();
+
+            // read object from file
+            FileInputStream fis = new FileInputStream("mybean.ser");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            MyBean result = (MyBean) ois.readObject();
+            ois.close();
+
+          //  System.out.println("One:" + result.getOne() + ", Two:" + result.getTwo());
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void read(){
+        try{
+            FileInputStream fileInputStream = new FileInputStream(new File("save.txt"));
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+            this.hungry= (Hungry) objectInputStream.readObject();
+
+
+
+            objectInputStream.close();
+            fileInputStream.close();
+
+        }catch (FileNotFoundException e ){
+            System.out.println("Nie znaleziono pliku");
+        }catch (IOException e){
+            System.out.println("Błąd  czegoś tam pytać Bartka");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+*/

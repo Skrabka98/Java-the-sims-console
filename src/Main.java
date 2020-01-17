@@ -1,10 +1,14 @@
 import Game.Player;
 import Shop.Buy;
+import Shop.Games;
+import Statistic.Hungry;
 
 public class Main {
     public static void main(String[] args) {
-        Player kup=new Player();
-        kup.menuPlayer();//System.out.println(kup.choseProduct());
+        Save kup=new Save();
+        Games hungry= new Games();
+        hungry.theSims();
+        hungry.theWitcher();
 
 
 
