@@ -8,9 +8,9 @@ import Statistic.Tired;
 import java.util.Random;
 
 public class Work {
-  private final int fullTimeWork=8;
-  private final int halfTimeWork=4;
-  private final double salaryW=120;
+  public final int fullTimeWork=8;
+  public final int halfTimeWork=4;
+  public final double salaryW=120;
   private Time time;
   private Money money;
   private Tired tired;
@@ -35,7 +35,7 @@ public class Work {
   public void workingFullTime(){
     this.time.addTime(fullTimeWork);
     this.money.salary(salaryW);
-    this.tired.loosOfPoints(fullTimeWork);
+    this.tired.loosOfPoints(60);
     this.stench.loosOfPoints(fullTimeWork);
     this.hungry.loosOfPoints(fullTimeWork);
     this.hp.loosOfPoints(randomPoint());
@@ -43,7 +43,7 @@ public class Work {
   public void workingHalfTime(){
     this.time.addTime(halfTimeWork);
     this.money.salary((salaryW/2));
-    this.tired.loosOfPoints(halfTimeWork);
+    this.tired.loosOfPoints(30);
     this.stench.loosOfPoints(halfTimeWork);
     this.hungry.loosOfPoints(halfTimeWork);
     this.hp.loosOfPoints(randomPoint());
@@ -54,6 +54,7 @@ public class Work {
     return this.accidentAtWork;
   }
 
+
   public void workingHours(int choiceHoursWork){
     if(choiceHoursWork == 4){
       workingHalfTime();
@@ -62,7 +63,7 @@ public class Work {
       workingFullTime();
         System.out.println("Idziesz do pracy na 8h");
     }else{
-      System.out.println("Moiżesz iść do pracy tylko na cztey lub dwie godziny");
+      System.out.println("Możesz iść do pracy tylko na cztery lub osiem godzin");
     }
   }
 

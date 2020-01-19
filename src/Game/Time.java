@@ -24,7 +24,6 @@ public class Time {
     public void addTime(int time){
         hour+=time;
         setDay();
-        timeOfDay();
     }
 
     public void setTime(int time) {
@@ -32,6 +31,6 @@ public class Time {
     }
 
     public int getTime() {
-        return time;
+        return hour;
     }
 }

@@ -20,6 +20,7 @@ public class Player {
     private Buy buy;
     private WindowsApps windowsApps ;
     private SeeStatistic seeStatistic;
+    private Time time;
 
 
     public Player(){
@@ -33,6 +34,7 @@ public class Player {
         this.buy = new Buy();
         this.windowsApps = new WindowsApps();
         this.seeStatistic = new SeeStatistic();
+        this.time = new Time();
     }
 
     public void menuPlayer() throws IOException {
@@ -42,12 +44,14 @@ public class Player {
             case 1 :{
                // this.windowsApps.clearConsole();
                 // clrscr();
-                this.seeStatistic.see();
-                System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
-                this.choiceHoursWork = scan.nextInt();
-                this.work.workingHours(this.choiceHoursWork);
+                seeStatistic.see();
+
+                //System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
+                work.workingFullTime();
+                //this.choiceHoursWork = scan.nextInt();
+               // this.work.workingHours(this.choiceHoursWork);
                 menuPlayer();
-                break;
+
             }
             case 2 :{
                 this.seeStatistic.see();

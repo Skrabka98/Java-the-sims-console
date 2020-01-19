@@ -17,7 +17,7 @@ public class Chips extends Items  {
         return 20;
     }
     public double setPrice(){
-        return 7.50;
+        return  7.50;
     }
 
     @Override

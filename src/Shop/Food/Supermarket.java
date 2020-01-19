@@ -44,7 +44,7 @@
       money.shopping(chips.setPrice());
       System.out.println("Grr");
       choseProduct();
-      break;
+
      }
     case 2:
     {
@@ -52,20 +52,20 @@
      money.shopping(cola.setPrice());
      System.out.println("Mlask mlask");
      choseProduct();
-     break;
+
     }
     case 3: {
      hungry.addPoint(pizza.setNumberOfPoints());
      money.shopping(pizza.setPrice());
      System.out.println("Mnam mniam");
      choseProduct();
-     break;
+
     }
     case 4:
     {
      Buy buy = new Buy();
      buy.buying();
-     break;
+
     }
     default:{
      System.out.println("Błędny przycisk!");
