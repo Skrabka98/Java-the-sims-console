@@ -25,7 +25,7 @@ public class Time {
         hour+=time;
         setDay();
     }
-    
+
 
     public int getTime() {
         return hour;
