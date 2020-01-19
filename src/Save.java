@@ -7,6 +7,7 @@ import Statistic.Stench;
 import Statistic.Tired;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Save {
     private Hungry hungry;
@@ -25,49 +26,25 @@ public class Save {
         this.tired = new Tired();
     }
 
-   /* public void write(){
-        try{
-            FileOutputStream fileOutputStream = new FileOutputStream(new File("save.txt"));
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-            objectOutputStream.writeObject(hungry);
-            objectOutputStream.writeObject(hp);
-            objectOutputStream.writeObject(money);
-            objectOutputStream.writeObject(stench);
-            objectOutputStream.writeObject(time);
-            objectOutputStream.writeObject(tired);
-             objectOutputStream.close();
-             fileOutputStream.close();
-
-        }catch (FileNotFoundException e ){
-            System.out.println("Nie znaleziono pliku");
-        }catch (IOException e){
-            System.out.println("Błąd  czegoś tam pytać Bartka");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-    }
-
-    public void read(){
-        try{
-            FileOutputStream fileOutputStream = new FileOutputStream(new File("save.txt"));
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-
-          //  objectOutputStream.
 
 
-           // objectOutputStream.close();
-         //   fileOutputStream.close();
-
-        }catch (FileNotFoundException e ){
-            System.out.println("Nie znaleziono pliku");
-        }catch (IOException e){
-            System.out.println("Błąd  czegoś tam pytać Bartka");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-    }*/
 
 
+            Scanner scanner = new Scanner(System.in);
+            public void write() {
+
+                try {
+                    PrintStream printStream = new PrintStream("save.txt");
+                    String tekst;
+
+                    while (scanner.hasNext() && !(tekst = scanner.next()).equals("stop")) {
+                        printStream.println(tekst);
+                    }
+                    printStream.close();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
 
 
 

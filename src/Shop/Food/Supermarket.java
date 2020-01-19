@@ -5,6 +5,7 @@
  import Shop.Buy;
  import Statistic.Hungry;
 
+ import java.io.IOException;
  import java.util.Scanner;
 
 
@@ -30,7 +31,7 @@
 
   }
 
-  public void choseProduct(){
+  public void choseProduct() throws IOException, InterruptedException {
    System.out.println("1.chips\n2.cola\n3.pizza\n4.Powrót ");
    Scanner sc=new Scanner(System.in);
    this.chose=sc.nextInt();
