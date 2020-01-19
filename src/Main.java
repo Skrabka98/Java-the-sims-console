@@ -11,9 +11,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
- Tired tired = new Tired();
- tired.loosOfPoints(20);
-        System.out.println(tired.getNumberOfPoint());
+ Player player = new Player();
+    player.menuPlayer();
 
 
 

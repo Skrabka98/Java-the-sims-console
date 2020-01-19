@@ -1,6 +1,7 @@
 package Statistic;
 
 import Game.Money;
+import Game.Play;
 import Game.Time;
 
 public class SeeStatistic {
@@ -10,14 +11,16 @@ public class SeeStatistic {
     private Tired tired;
     private Money money;
     private Time time;
+    private Play play;
 
     public SeeStatistic(){
-        this.hp = new Hp();
-        this.hungry = new Hungry();
-        this.stench = new Stench();
-        this.tired = new Tired();
-        this.money = new Money();
-        this.time = new Time();
+        this.play = new Play();
+        this.hp = play.hp;
+        this.hungry = play.hungry;
+        this.stench = play.stench;
+        this.tired = play.tired;
+        this.money = play.money;
+        this.time = play.time;
     }
 
 

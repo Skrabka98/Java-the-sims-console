@@ -1,6 +1,7 @@
 package Shop.Medicament;
 
 import Game.Money;
+import Game.Play;
 import Shop.Buy;
 import Statistic.Hp;
 
@@ -9,6 +10,7 @@ import java.util.Scanner;
 
 public class Pharmacy {
     public int chose;
+    Play play;
     Apap apap ;
     Bandage bandage;
     Hp hp;
@@ -16,9 +18,10 @@ public class Pharmacy {
 
     public Pharmacy(){
         this.chose=1;
+        this.play = new Play();
         this.apap = new Apap();
-        this.hp = new Hp();
-        this.money = new Money();
+        this.hp = play.hp;
+        this.money = play.money;
         this.bandage= new Bandage();
 
     }

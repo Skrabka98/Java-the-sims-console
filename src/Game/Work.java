@@ -10,7 +10,7 @@ import java.util.Random;
 public class Work {
   public final int fullTimeWork=8;
   public final int halfTimeWork=4;
-  public final double salaryW=120;
+  private final double salaryW=120;
   private Time time;
   private Money money;
   private Tired tired;
@@ -19,16 +19,16 @@ public class Work {
   private Random rand;
   private Hp hp;
   private int accidentAtWork;
+  private Play play = new Play();
 
   public Work (){
-
-    this.time = new Time();
-    this.money= new Money();
-    this.tired = new Tired();
-    this.stench = new Stench();
-    this.hungry = new Hungry();
+    this.time = play.time;
+    this.money= play.money;
+    this.tired = play.tired;
+    this.stench = play.stench;
+    this.hungry = play.hungry;
     this.rand = new Random();
-    this.hp = new Hp();
+    this.hp = play.hp;
     this.accidentAtWork = accidentAtWork;
   }
 

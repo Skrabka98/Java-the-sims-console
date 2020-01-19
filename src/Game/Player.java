@@ -2,7 +2,7 @@ package Game;
 
 import NieMamPojęciaJakToWykorzystać.WindowsApps;
 import Shop.Buy;
-import Statistic.SeeStatistic;
+import Statistic.*;
 
 import javax.imageio.IIOException;
 import java.io.IOException;
@@ -20,7 +20,8 @@ public class Player {
     private Buy buy;
     private WindowsApps windowsApps ;
     private SeeStatistic seeStatistic;
-    private Time time;
+
+
 
 
     public Player(){
@@ -34,7 +35,7 @@ public class Player {
         this.buy = new Buy();
         this.windowsApps = new WindowsApps();
         this.seeStatistic = new SeeStatistic();
-        this.time = new Time();
+
     }
 
     public void menuPlayer() throws IOException {
@@ -42,14 +43,11 @@ public class Player {
         this.whatDoYouDo = scan.nextInt();
         switch(this.whatDoYouDo){
             case 1 :{
-               // this.windowsApps.clearConsole();
-                // clrscr();
                 this.seeStatistic.see();
 
-                //System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
-                work.workingFullTime();
-                //this.choiceHoursWork = scan.nextInt();
-               // this.work.workingHours(this.choiceHoursWork);
+                System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
+                this.choiceHoursWork = scan.nextInt();
+                this.work.workingHours(this.choiceHoursWork);
                 menuPlayer();
 
             }
@@ -78,15 +76,5 @@ public class Player {
         }
         scan.close();
     }
-  /*  public static void clrscr(){
 
-        //Clears Screen in java
-        try {
-            if (System.getProperty("os.name").contains("Windows"))
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            else
-                Runtime.getRuntime().exec("clear");
-        } catch (IOException | InterruptedException ex) {}
-
-    }*/
 }

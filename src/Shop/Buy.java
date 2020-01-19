@@ -11,7 +11,7 @@ public class Buy {
     private int choseing;
     private Supermarket supermarket;
     private Pharmacy pharmacy;
-    Player player;
+    private Player player;
 
     public Buy(){
         this.choseing=choseing;
