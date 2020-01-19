@@ -4,7 +4,7 @@ abstract public class Statistic {
 
     private final int maxPoint = 100 ;
     private final int minPoint = 0;
-    private int numberOfPoint ;
+    public int numberOfPoint ;
 
     Statistic( int numberOfPoint){
         this.numberOfPoint = maxPoint;

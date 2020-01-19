@@ -1,9 +1,9 @@
 package Game;
 
 public class Time {
-    private int hour=6;//czemu 6?
+    public int hour=6;//czemu 6?
     private int day=0;
-    private int time; //do czego to?
+    public int time; //do czego to?
     public Time(){
         this.hour=hour;
         this.day=day;
@@ -25,10 +25,7 @@ public class Time {
         hour+=time;
         setDay();
     }
-
-    public void setTime(int time) {
-        this.time = time;
-    }
+    
 
     public int getTime() {
         return hour;

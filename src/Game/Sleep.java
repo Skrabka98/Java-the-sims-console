@@ -35,9 +35,9 @@ public class Sleep implements SetNumberOfPoints {
 
 
     public void sleeping(int sleepHour){
-        this.tired.addPoint(sleepHour);
-        this.stench.loosOfPoints(sleepHour);
-        this.hungry.loosOfPoints(sleepHour);
+        this.tired.addPoint(sleepHour*setNumberOfPoints());
+        this.stench.loosOfPoints(sleepHour*setNumberOfPoints());
+        this.hungry.loosOfPoints(sleepHour*setNumberOfPoints());
         this.time.addTime(sleepHour);
     }
 

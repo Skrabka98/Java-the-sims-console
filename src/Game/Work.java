@@ -39,6 +39,10 @@ public class Work {
     this.stench.loosOfPoints(fullTimeWork);
     this.hungry.loosOfPoints(fullTimeWork);
     this.hp.loosOfPoints(randomPoint());
+    System.out.println(time.getTime());
+  }
+  public void xxx(){
+    System.out.println(time.getTime());
   }
   public void workingHalfTime(){
     this.time.addTime(halfTimeWork);

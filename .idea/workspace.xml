@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb6ddd6-1912-4c29-bf95-a0c3fd72c1c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Game/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Bath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Bath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Sleep.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Sleep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Work.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projekt/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Bath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Bath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Sleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Sleep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Work.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Buy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Buy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Medicament/Pharmacy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Medicament/Pharmacy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistic/SeeStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistic/SeeStatistic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statistic/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistic/Statistic.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +79,7 @@
       <workItem from="1579212874702" duration="2127000" />
       <workItem from="1579435743582" duration="3021000" />
       <workItem from="1579459805161" duration="3203000" />
+      <workItem from="1579471675269" duration="2561000" />
     </task>
     <servers />
   </component>
