@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb6ddd6-1912-4c29-bf95-a0c3fd72c1c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/IsBought.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Time.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projekt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projekt/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projekt/Save.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Save.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Games.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Games.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projekt/Statistic/Statistic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Statistic/Statistic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Food/Food.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Interfaces/ItemsInterfaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shop/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statistic/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistic/Statistic.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,6 +31,10 @@
   </component>
   <component name="ProjectId" id="1WRcqMr6EqP4CX75GSL7GhaK5xp" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -73,6 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579116037691</updated>
       <workItem from="1579116040506" duration="383000" />
+      <workItem from="1579196295805" duration="6666000" />
+      <workItem from="1579212874702" duration="2127000" />
     </task>
     <servers />
   </component>

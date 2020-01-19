@@ -1,13 +1,14 @@
 import Game.Player;
-
-import java.io.IOException;
-
+import Shop.Buy;
+import Shop.Games;
+import Statistic.Hungry;
 
 public class Main {
-    public static void main(String[] args)  {
-
-        Player kup=new Player();
-        kup.menuPlayer();//System.out.println(kup.choseProduct());
+    public static void main(String[] args) {
+        Save kup=new Save();
+        Games hungry= new Games();
+        hungry.theSims();
+        hungry.theWitcher();
 
 
 
