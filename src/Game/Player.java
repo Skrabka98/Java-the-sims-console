@@ -1,7 +1,11 @@
 package Game;
 
+import NieMamPojęciaJakToWykorzystać.WindowsApps;
 import Shop.Buy;
+import Statistic.SeeStatistic;
 
+import javax.imageio.IIOException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Player {
@@ -14,6 +18,9 @@ public class Player {
     private Sleep sleep ;
     private Bath bath;
     private Buy buy;
+    private WindowsApps windowsApps ;
+    private SeeStatistic seeStatistic;
+
 
     public Player(){
         this.whatDoYouDo= whatDoYouDo;
@@ -24,13 +31,18 @@ public class Player {
         this.sleep = new Sleep();
         this.bath = new Bath();
         this.buy = new Buy();
+        this.windowsApps = new WindowsApps();
+        this.seeStatistic = new SeeStatistic();
     }
 
-    public void menuPlayer(){
-        System.out.println("1.Praca\n2.Sen\n3.Kąpiel\n4.Sklep\n5.jeszcze nie wiem");
+    public void menuPlayer() throws IOException {
+        System.out.println("1.Praca\n2.Sen\n3.Kąpiel\n4.Sklep\n5.Wyjście z gry");
         this.whatDoYouDo = scan.nextInt();
         switch(this.whatDoYouDo){
             case 1 :{
+               // this.windowsApps.clearConsole();
+                // clrscr();
+                this.seeStatistic.see();
                 System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
                 this.choiceHoursWork = scan.nextInt();
                 this.work.workingHours(this.choiceHoursWork);
@@ -38,6 +50,7 @@ public class Player {
                 break;
             }
             case 2 :{
+                this.seeStatistic.see();
                 System.out.println("Na ile idzesz spać?");
                 this.sleepHouer = scan.nextInt();
                 this.sleep.sleeping(this.sleepHouer);
@@ -45,16 +58,31 @@ public class Player {
                 break;
             }
             case 3 :{
+                this.seeStatistic.see();
                 bath.batch();
                 menuPlayer();
                 break;
             }
             case 4 :{
+                this.seeStatistic.see();
                this.buy.buying();
                menuPlayer();
                break;
             }
-
+            case 5: {
+              System.exit(0);
+            }
         }
     }
+  /*  public static void clrscr(){
+
+        //Clears Screen in java
+        try {
+            if (System.getProperty("os.name").contains("Windows"))
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            else
+                Runtime.getRuntime().exec("clear");
+        } catch (IOException | InterruptedException ex) {}
+
+    }*/
 }

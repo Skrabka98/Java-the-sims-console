@@ -4,6 +4,7 @@ import Game.Player;
 import Shop.Food.Supermarket;
 import Shop.Medicament.Pharmacy;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Buy {
@@ -20,7 +21,7 @@ public class Buy {
 
     }
 
-    public void buying(){
+    public void buying() throws IOException {
         System.out.println("1.Biedra\n2.Apteka\n3.Powrót");
         Scanner sc=new Scanner(System.in);
         this.choseing=sc.nextInt();

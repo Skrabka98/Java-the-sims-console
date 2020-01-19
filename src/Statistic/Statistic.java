@@ -21,9 +21,6 @@ abstract public class Statistic {
         }
 
     }
-    public int showPoints(){
-        return this.numberOfPoint;
-    }
 
     public int loosOfPoints(double numberOfPoint){
         this.numberOfPoint-= numberOfPoint;

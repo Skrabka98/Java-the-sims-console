@@ -4,6 +4,7 @@ import Game.Money;
 import Shop.Buy;
 import Statistic.Hp;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Pharmacy {
@@ -22,7 +23,7 @@ public class Pharmacy {
 
     }
 
-    public void choseProduct(){
+    public void choseProduct() throws IOException {
         System.out.println("1.apap \n2.bandage");
         Scanner sc=new Scanner(System.in);
         this.chose=sc.nextInt();

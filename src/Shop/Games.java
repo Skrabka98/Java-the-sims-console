@@ -5,11 +5,12 @@ import Interfaces.IsBought;
 
 import java.util.Scanner;
 
-public class Games implements IsBought{
+public class Games {
     private Money money;
-public Games(){
-    this.money = new Money();
-}
+
+    public Games(){
+        this.money = new Money();
+    }
     public boolean isBought(){return false;}
 
 
@@ -21,9 +22,9 @@ public Games(){
         else System.out.println("Już kupiłeś tą grę!");
     }
     public void theWitcher(){
-        if(isBought==false){
+        if(isBought()==false){
             this.money.shopping(400);
-            isBought=true;
+            isBought();
         }
         else System.out.println("Już kupiłeś tą grę!");
     }
