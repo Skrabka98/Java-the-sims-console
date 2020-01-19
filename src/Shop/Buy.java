@@ -1,15 +1,12 @@
 package Shop;
 
-import CLS.ClearConsole;
 import Game.Player;
 import Shop.Food.Supermarket;
 import Shop.Medicament.Pharmacy;
 
-
-import java.io.IOException;
 import java.util.Scanner;
 
-public class Buy extends ClearConsole {
+public class Buy {
     private int choseing;
     private Supermarket supermarket;
     private Pharmacy pharmacy;
@@ -19,9 +16,11 @@ public class Buy extends ClearConsole {
         this.choseing=choseing;
         this.supermarket = new Supermarket();
         this.pharmacy = new Pharmacy();
+
+
     }
 
-    public void buying() throws IOException, InterruptedException {
+    public void buying(){
         System.out.println("1.Biedra\n2.Apteka\n3.Powrót");
         Scanner sc=new Scanner(System.in);
         this.choseing=sc.nextInt();
@@ -45,7 +44,6 @@ public class Buy extends ClearConsole {
                 System.out.println("Błędny przycisk!");
             }
         }
-        sc.close();
     }
 
 
