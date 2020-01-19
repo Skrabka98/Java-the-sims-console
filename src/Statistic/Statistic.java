@@ -15,7 +15,7 @@ abstract public class Statistic {
     public int addPoint (int numberOfPoint) {
         this.numberOfPoint += numberOfPoint;
         if(this.numberOfPoint>= maxPoint){
-            return numberOfPoint=maxPoint;
+            return this.numberOfPoint=maxPoint;
         }else {
             return this.numberOfPoint;
         }
@@ -25,7 +25,7 @@ abstract public class Statistic {
     public int loosOfPoints(int numberOfPoint){
         this.numberOfPoint-= numberOfPoint;
         if(this.numberOfPoint<= minPoint){
-            return numberOfPoint=minPoint;
+            return this.numberOfPoint=minPoint;
         }else {
             return this.numberOfPoint;
         }

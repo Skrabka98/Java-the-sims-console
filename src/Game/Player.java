@@ -44,7 +44,7 @@ public class Player {
             case 1 :{
                // this.windowsApps.clearConsole();
                 // clrscr();
-                seeStatistic.see();
+                this.seeStatistic.see();
 
                 //System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
                 work.workingFullTime();
@@ -59,7 +59,6 @@ public class Player {
                 this.sleepHouer = scan.nextInt();
                 this.sleep.sleeping(this.sleepHouer);
                 menuPlayer();
-                break;
             }
             case 3 :{
                 this.seeStatistic.see();
@@ -77,6 +76,7 @@ public class Player {
               System.exit(0);
             }
         }
+        scan.close();
     }
   /*  public static void clrscr(){
 
