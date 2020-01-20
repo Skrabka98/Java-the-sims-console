@@ -1,6 +1,6 @@
 package Game;
 
-import NieMamPojęciaJakToWykorzystać.WindowsApps;
+
 import Shop.Buy;
 import Statistic.*;
 
@@ -18,7 +18,6 @@ public class Player {
     private Sleep sleep ;
     private Bath bath;
     private Buy buy;
-    private WindowsApps windowsApps ;
     private SeeStatistic seeStatistic;
 
 
@@ -33,7 +32,6 @@ public class Player {
         this.sleep = new Sleep();
         this.bath = new Bath();
         this.buy = new Buy();
-        this.windowsApps = new WindowsApps();
         this.seeStatistic = new SeeStatistic();
 
     }
