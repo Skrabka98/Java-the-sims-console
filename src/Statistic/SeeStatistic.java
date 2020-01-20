@@ -13,8 +13,8 @@ public class SeeStatistic {
     private Time time;
     private Play play;
 
-    public SeeStatistic(){
-        this.play = new Play();
+    public SeeStatistic(Play play){
+        this.play = play;
         this.hp = play.hp;
         this.hungry = play.hungry;
         this.stench = play.stench;
@@ -23,8 +23,12 @@ public class SeeStatistic {
         this.time = play.time;
     }
 
+    public SeeStatistic() {
 
-   public void see(){
+    }
+
+
+    public void see(){
        System.out.println("Time: "+time.getTime()+"\tMoney: "+money.getMoney());
        System.out.println("Hp: "+hp.getNumberOfPoint()+"  Hungry: "+hungry.getNumberOfPoint()+"  Stench: "+stench.getNumberOfPoint()+"  Tired: "+tired.getNumberOfPoint());
     }

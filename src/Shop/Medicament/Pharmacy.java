@@ -9,20 +9,24 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Pharmacy {
-    public int chose;
-    Play play;
-    Apap apap ;
-    Bandage bandage;
-    Hp hp;
-    Money money;
+    private int chose;
+    private Play play;
+    private Apap apap ;
+    private Bandage bandage;
+    private Hp hp;
+    private Money money;
 
-    public Pharmacy(){
+    public Pharmacy(Play play){
         this.chose=1;
-        this.play = new Play();
+        this.play = play;
         this.apap = new Apap();
         this.hp = play.hp;
         this.money = play.money;
         this.bandage= new Bandage();
+
+    }
+
+    public Pharmacy() {
 
     }
 

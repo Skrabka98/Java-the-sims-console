@@ -41,7 +41,7 @@ public class Player {
         this.whatDoYouDo = scan.nextInt();
         switch(this.whatDoYouDo){
             case 1 :{
-                this.seeStatistic.see();
+                //this.seeStatistic.see();
 
                 System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
                 this.choiceHoursWork = scan.nextInt();

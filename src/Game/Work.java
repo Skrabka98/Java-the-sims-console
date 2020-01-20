@@ -19,9 +19,10 @@ public class Work {
   private Random rand;
   private Hp hp;
   private int accidentAtWork;
-  private Play play = new Play();
+  private Play play;
 
-  public Work (){
+  public Work (Play play){
+    this.play = play;
     this.time = play.time;
     this.money= play.money;
     this.tired = play.tired;
@@ -30,6 +31,10 @@ public class Work {
     this.rand = new Random();
     this.hp = play.hp;
     this.accidentAtWork = accidentAtWork;
+  }
+
+  public Work() {
+
   }
 
   public void workingFullTime(){

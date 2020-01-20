@@ -18,14 +18,18 @@ public class Sleep implements SetNumberOfPoints {
     private Time time;
 
 
-    public Sleep (){
+    public Sleep (Play play){
      this.scanner=new Scanner(System.in);
      this.numberOfSleep= numberOfSleep;
-     this.play = new Play();
+     this.play = play;
      this.tired = play.tired;
      this.stench = play.stench;
      this.hungry = play.hungry;
      this.time = play.time;
+    }
+
+    public Sleep() {
+
     }
 
     public  int setNumberOfPoints(){

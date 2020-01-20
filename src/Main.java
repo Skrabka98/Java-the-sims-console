@@ -11,15 +11,11 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
- //Player player = new Player();
-    //player.menuPlayer();
         Play play = new Play();
-        Work work = new Work();
-        SeeStatistic seeStatistic = new SeeStatistic();
-        work.workingFullTime();
-        work.xxx();
-        System.out.println(play.time.getTime());
-        seeStatistic.see();
+        Player player = new Player();
+        player.menuPlayer();
+
+
 
 
 

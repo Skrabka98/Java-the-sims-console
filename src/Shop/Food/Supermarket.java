@@ -2,6 +2,7 @@
  package Shop.Food;
 
  import Game.Money;
+ import Game.Play;
  import Shop.Buy;
  import Statistic.Hungry;
 
@@ -16,18 +17,24 @@
   private Money money;
   private Hungry hungry;
   private Pizza pizza;
+  private Play play;
 
 
 
 
 
-  public Supermarket(){
+  public Supermarket(Play play){
+   this.play = play;
    this.chose=chose;
    this.chips = new Chips();
    this.cola = new Cola();
    this.pizza = new Pizza();
-   this.hungry = new Hungry();
-   this.money = new Money();
+   this.hungry = play.hungry;
+   this.money = play.money;
+
+  }
+
+  public Supermarket() {
 
   }
 

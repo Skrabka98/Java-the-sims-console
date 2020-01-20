@@ -1,7 +1,7 @@
 package Game;
 
 public class Money {
-    private double money = 2000;
+    private double money = 1110;
 
     public Money(){
        this.money=money;
@@ -16,7 +16,12 @@ public class Money {
     }
 
     public void shopping(double price){
-        this.money-=price;
+        if((this.money-=price)>=0){
+            this.money-=price;
+        }else{
+            System.out.println("Nie masz wystarczającej ilości pieniędzy.");
+        }
+
     }
 
 }
