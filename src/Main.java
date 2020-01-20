@@ -2,6 +2,7 @@ import Game.*;
 import Shop.Buy;
 import Shop.Food.Supermarket;
 import Shop.Games;
+import Shop.Medicament.Pharmacy;
 import Statistic.Hungry;
 import Statistic.SeeStatistic;
 import Statistic.Stench;
@@ -12,7 +13,15 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         Play play = new Play();
-        Player player = new Player();
+        Bath bath = new Bath(play);
+        Work work = new Work(play);
+        Sleep sleep = new Sleep(play);
+        SeeStatistic seeStatistic = new SeeStatistic(play);
+        Supermarket supermarket = new Supermarket(play);
+        Pharmacy pharmacy = new Pharmacy(play);
+        Buy buy = new Buy(play);
+
+        Player player = new Player(work, sleep, bath, seeStatistic, buy);
         player.menuPlayer();
 
 

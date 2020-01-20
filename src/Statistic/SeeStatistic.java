@@ -23,9 +23,7 @@ public class SeeStatistic {
         this.time = play.time;
     }
 
-    public SeeStatistic() {
 
-    }
 
 
     public void see(){

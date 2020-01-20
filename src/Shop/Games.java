@@ -1,20 +1,19 @@
 package Shop;
 
 import Game.Money;
-import Interfaces.IsBought;
+import Game.Play;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Games {
     private Money money;
+    private Play play;
     ArrayList<String> gamesList;
 
-    public Games(){
-        this.money = new Money();
+    public Games(Play play){
+        this.money = play.money;
         this.gamesList= new ArrayList<String>();
     }
-    public boolean isBought(){return false;}
 
     public void buingGames(){
         for(String p: gamesList){

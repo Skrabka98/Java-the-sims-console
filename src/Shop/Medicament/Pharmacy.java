@@ -26,9 +26,6 @@ public class Pharmacy {
 
     }
 
-    public Pharmacy() {
-
-    }
 
     public void choseProduct() throws IOException {
         System.out.println("1.apap \n2.bandage");
@@ -40,8 +37,7 @@ public class Pharmacy {
                 this.hp.addPoint(this.apap.setNumberOfPoints());
                 this.money.shopping(this.apap.setPrice());
                 System.out.println("Dynamite!");
-                Buy buy = new Buy();
-                buy.buying();
+                break;
 
             }
             case 2:
@@ -49,14 +45,12 @@ public class Pharmacy {
                 hp.addPoint(bandage.setNumberOfPoints());
                 money.shopping(bandage.setPrice());
                 System.out.println("Ałaaa");
-                Buy buy = new Buy();
-                buy.buying();
+                break;
 
             }
             case 3:
             {
-                Buy buy = new Buy();
-                buy.buying();
+                break;
             }
             default:{
                 System.out.println("Błędny przycisk!");

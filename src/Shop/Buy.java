@@ -1,5 +1,6 @@
 package Shop;
 
+import Game.Play;
 import Game.Player;
 import Shop.Food.Supermarket;
 import Shop.Medicament.Pharmacy;
@@ -11,12 +12,12 @@ public class Buy {
     private int choseing;
     private Supermarket supermarket;
     private Pharmacy pharmacy;
-    private Player player;
+    private Play play;
 
-    public Buy(){
+    public Buy(Play play){
         this.choseing=choseing;
-        this.supermarket = new Supermarket();
-        this.pharmacy = new Pharmacy();
+        this.supermarket = new Supermarket(play);
+        this.pharmacy = new Pharmacy(play);
 
 
     }
@@ -38,8 +39,7 @@ public class Buy {
             }
             case 3:
             {
-               player = new Player();
-               player.menuPlayer();
+                break;
             }
             default:{
                 System.out.println("Błędny przycisk!");

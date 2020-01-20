@@ -19,20 +19,21 @@ public class Player {
     private Bath bath;
     private Buy buy;
     private SeeStatistic seeStatistic;
+    private Play play;
 
 
 
 
-    public Player(){
+    public Player(Work work, Sleep sleep, Bath bath, SeeStatistic seeStatistic, Buy buy){
         this.whatDoYouDo= whatDoYouDo;
         this.choiceHoursWork = choiceHoursWork;
         this.scan = new Scanner(System.in);
-        this.work = new Work();
+        this.work = work;
         this.sleepHouer = sleepHouer;
-        this.sleep = new Sleep();
-        this.bath = new Bath();
-        this.buy = new Buy();
-        this.seeStatistic = new SeeStatistic();
+        this.sleep = sleep;
+        this.bath = bath;
+        this.buy = buy;
+        this.seeStatistic = seeStatistic;
 
     }
 
@@ -41,7 +42,7 @@ public class Player {
         this.whatDoYouDo = scan.nextInt();
         switch(this.whatDoYouDo){
             case 1 :{
-                //this.seeStatistic.see();
+                this.seeStatistic.see();
 
                 System.out.println("możesz iść do pracy na \n4 godziny\n8 godzin");
                 this.choiceHoursWork = scan.nextInt();
@@ -71,6 +72,10 @@ public class Player {
             case 5: {
               System.exit(0);
             }
+            default:{
+                System.out.println("Idiota!");
+            menuPlayer();
+            break;}
         }
         scan.close();
     }

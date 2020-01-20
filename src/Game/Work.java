@@ -11,6 +11,7 @@ public class Work {
   public final int fullTimeWork=8;
   public final int halfTimeWork=4;
   private final double salaryW=120;
+  private final double bonus=30;
   private Time time;
   private Money money;
   private Tired tired;
@@ -20,6 +21,7 @@ public class Work {
   private Hp hp;
   private int accidentAtWork;
   private Play play;
+
 
   public Work (Play play){
     this.play = play;
@@ -33,16 +35,13 @@ public class Work {
     this.accidentAtWork = accidentAtWork;
   }
 
-  public Work() {
-
-  }
 
   public void workingFullTime(){
     this.time.addTime(fullTimeWork);
-    this.money.salary(salaryW);
+    this.money.salary(salaryW+bonus);
     this.tired.loosOfPoints(60);
-    this.stench.loosOfPoints(fullTimeWork);
-    this.hungry.loosOfPoints(fullTimeWork);
+    this.stench.loosOfPoints(fullTimeWork*5);
+    this.hungry.loosOfPoints(fullTimeWork*4);
     this.hp.loosOfPoints(randomPoint());
     System.out.println(time.getTime());
   }
@@ -53,8 +52,8 @@ public class Work {
     this.time.addTime(halfTimeWork);
     this.money.salary((salaryW/2));
     this.tired.loosOfPoints(30);
-    this.stench.loosOfPoints(halfTimeWork);
-    this.hungry.loosOfPoints(halfTimeWork);
+    this.stench.loosOfPoints(halfTimeWork*5);
+    this.hungry.loosOfPoints(halfTimeWork*4);
     this.hp.loosOfPoints(randomPoint());
   }
 

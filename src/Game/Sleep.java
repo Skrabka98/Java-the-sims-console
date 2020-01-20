@@ -28,12 +28,9 @@ public class Sleep implements SetNumberOfPoints {
      this.time = play.time;
     }
 
-    public Sleep() {
-
-    }
 
     public  int setNumberOfPoints(){
-        return 5;
+        return 10;
     } // iość punktów o jaką jest zwiększany sen na godzinę
 
 
