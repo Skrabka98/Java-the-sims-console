@@ -1,31 +1,29 @@
 package Shop.Food;
 
-
 import Shop.Items;
 
-public class Pizza extends Items {
+public class Energydrink extends Items {
 
-    public Pizza(int numberOfPoints, double price) {
+    public Energydrink(int numberOfPoints, double price) {
         super(numberOfPoints, price);
     }
 
-    public Pizza() {
+    public Energydrink() {
         super(0, 0);
     }
 
     public int setNumberOfPoints() {
-        return 40;
+        return 10;
     }
 
     public double setPrice() {
-        return 17.50;
+        return 5.50;
     }
 
     @Override
     public String productDescription() {
-        String description = "3.Pizza:\tKoszt: " + setPrice() + "\tNajedzenie: " + setNumberOfPoints();
+        String description = "4.Redbull: \tKoszt: " + setPrice() + "\tEnergia: " + setNumberOfPoints();
         return description;
     }
 }
-
 

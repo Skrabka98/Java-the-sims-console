@@ -1,11 +1,9 @@
 package Shop;
 
 import Game.Play;
-import Game.Player;
 import Shop.Food.Supermarket;
 import Shop.Medicament.Pharmacy;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Buy {
@@ -22,8 +20,8 @@ public class Buy {
 
     }
 
-    public void buying() throws IOException {
-        System.out.println("1.Biedra\n2.Apteka\n3.Powrót");
+    public void buying() {
+        System.out.println("1.Biedronka\n2.Apteka\n3.Powrót");
         Scanner sc = new Scanner(System.in);
         this.choseing = sc.nextInt();
         switch (choseing) {
@@ -39,6 +37,7 @@ public class Buy {
             }
             case 3: {
                 break;
+
             }
             default: {
                 System.out.println("Błędny przycisk!");

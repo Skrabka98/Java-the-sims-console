@@ -15,6 +15,6 @@ abstract public class Items implements SetNumberOfPoints, SetPrice {
     }
 
 
-    public abstract void productDescription();
+    public abstract String productDescription();
 
 }

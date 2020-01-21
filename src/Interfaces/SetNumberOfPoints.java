@@ -2,7 +2,7 @@ package Interfaces;
 
 public interface SetNumberOfPoints {
 
-   public int setNumberOfPoints();
+    public int setNumberOfPoints();
 
 
 }

@@ -1,29 +1,28 @@
 import Game.*;
 import Shop.Buy;
-import Shop.Food.Supermarket;
 import Shop.Games;
-import Shop.Medicament.Pharmacy;
-import Statistic.Hungry;
-import Statistic.SeeStatistic;
-import Statistic.Stench;
-import Statistic.Tired;
+import Statistic.*;
 
-import java.io.IOException;
 import java.util.InputMismatchException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Play play = new Play();
         Bath bath = new Bath(play);
         Work work = new Work(play);
         Sleep sleep = new Sleep(play);
         SeeStatistic seeStatistic = new SeeStatistic(play);
-        Supermarket supermarket = new Supermarket(play);
-        Pharmacy pharmacy = new Pharmacy(play);
         Buy buy = new Buy(play);
         Games games = new Games(play);
-        Player player = new Player(work, sleep, bath, seeStatistic, buy, games);
-        player.menuPlayer();
+        Player player = new Player(work, sleep, bath, seeStatistic, buy, games, play);
+
+        do{
+        try {
+            player.menuPlayer();
+        } catch (InputMismatchException e) {
+            System.out.println("Wybierz odpowiedni numer!");
+        }
+        }while(true);
 
 
     }

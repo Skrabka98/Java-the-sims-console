@@ -23,8 +23,9 @@ public class Apap extends Items {
 
 
     @Override
-    public void productDescription() {
-        System.out.println();
+    public String productDescription() {
+        String description = "1.Apap:\tKoszt: " + setPrice() + "\tLeczenie: " + setNumberOfPoints();
+        return description;
     }
 
 }

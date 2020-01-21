@@ -8,8 +8,8 @@ import Statistic.Tired;
 import java.util.Random;
 
 public class Work {
-    public final int fullTimeWork = 8;
-    public final int halfTimeWork = 4;
+    private final int fullTimeWork = 8;
+    private final int halfTimeWork = 4;
     private final double salaryW = 120;
     private final double bonus = 30;
     private Time time;
@@ -43,7 +43,6 @@ public class Work {
         this.stench.loosOfPoints(40);
         this.hungry.loosOfPoints(40);
         this.hp.loosOfPoints(randomPoint());
-        System.out.println(time.getTime());
     }
 
     public void workingHalfTime() {
@@ -72,7 +71,7 @@ public class Work {
             } else {
                 System.out.println("Możesz iść do pracy tylko na cztery lub osiem godzin");
             }
-        } else System.out.println("Chujumuju");
+        } else System.out.println("Musisz być najedzony, umyty i wypoczęty!");
 
 
     }

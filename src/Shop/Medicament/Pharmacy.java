@@ -2,11 +2,10 @@ package Shop.Medicament;
 
 import Game.Money;
 import Game.Play;
-import Shop.Buy;
 import Statistic.Hp;
+import Statistic.SeeStatistic;
 
 import java.io.IOException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Pharmacy {
@@ -16,6 +15,7 @@ public class Pharmacy {
     private Bandage bandage;
     private Hp hp;
     private Money money;
+    private SeeStatistic seeStatistic;
 
     public Pharmacy(Play play) {
         this.chose = 1;
@@ -24,12 +24,14 @@ public class Pharmacy {
         this.hp = play.hp;
         this.money = play.money;
         this.bandage = new Bandage();
+        this.seeStatistic = new SeeStatistic(play);
 
     }
 
 
-    public void choseProduct() throws IOException {
-        System.out.println("1.apap \n2.bandage");
+    public void choseProduct(){
+        this.seeStatistic.see();
+        System.out.println(this.apap.productDescription()+"\n"+this.bandage.productDescription()+"\n3. Wyjście");
         Scanner sc = new Scanner(System.in);
         this.chose = sc.nextInt();
 
@@ -39,7 +41,7 @@ public class Pharmacy {
                     this.money.shopping(this.apap.setPrice());
                     this.hp.addPoint(this.apap.setNumberOfPoints());
 
-                    System.out.println("Dynamite!");
+                    System.out.println("Uleczyłeś/aś się");
                 }
                 break;
 
@@ -48,7 +50,7 @@ public class Pharmacy {
                 if (this.money.getMoney() >= this.bandage.setPrice()) {
                     hp.addPoint(bandage.setNumberOfPoints());
                     money.shopping(bandage.setPrice());
-                    System.out.println("Ałaaa");
+                    System.out.println("Uleczyłeś/aś się");
                 }
                 break;
 

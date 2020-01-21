@@ -10,6 +10,9 @@ public class Hp extends Statistic {
         super(0);
     }
 
-
-    // YOU WILL DIEEE!!!!!
+    public void die(){
+        if(numberOfPoint<=0){
+            System.exit(0);
+        }
+    }
 }

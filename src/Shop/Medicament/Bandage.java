@@ -22,8 +22,9 @@ public class Bandage extends Items {
     }
 
     @Override
-    public void productDescription() {
-        System.out.println();
+    public String productDescription() {
+        String description = "2.Bandaż:\tKoszt: " + setPrice() + "\tLeczenie: " + setNumberOfPoints();
+        return description;
     }
 }
 

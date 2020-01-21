@@ -18,12 +18,13 @@ public class Cola extends Items {
     }
 
     public double setPrice() {
-        return 5.50;
+        return 5;
     }
 
     @Override
-    public void productDescription() {
-        System.out.println();
+    public String productDescription() {
+        String description = "2.Cola: \tKoszt: " + setPrice() + "\tNajedzenie: " + setNumberOfPoints();
+        return description;
     }
 
 }

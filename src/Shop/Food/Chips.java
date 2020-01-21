@@ -22,7 +22,8 @@ public class Chips extends Items {
     }
 
     @Override
-    public void productDescription() {
-        System.out.println();
+    public String productDescription() {
+        String description = "1.Chips:\tKoszt: " + setPrice() + "\tNajedzenie: " + setNumberOfPoints();
+        return description;
     }
 }

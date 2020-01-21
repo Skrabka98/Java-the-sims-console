@@ -3,11 +3,10 @@ package Shop.Food;
 
 import Game.Money;
 import Game.Play;
-import Shop.Buy;
 import Statistic.Hungry;
+import Statistic.SeeStatistic;
+import Statistic.Tired;
 
-import java.io.IOException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -15,10 +14,13 @@ public class Supermarket {
     private int chose;
     private Chips chips;
     private Cola cola;
+    private Energydrink energydrink;
     private Money money;
     private Hungry hungry;
     private Pizza pizza;
     private Play play;
+    private Tired tired;
+    private SeeStatistic seeStatistic;
 
 
     public Supermarket(Play play) {
@@ -27,14 +29,19 @@ public class Supermarket {
         this.chips = new Chips();
         this.cola = new Cola();
         this.pizza = new Pizza();
+        this.energydrink = new Energydrink();
         this.hungry = play.hungry;
         this.money = play.money;
+        this.tired = play.tired;
+        this.seeStatistic = new SeeStatistic(play);
 
     }
 
 
-    public void choseProduct() throws IOException {
-        System.out.println("1.chips\n2.cola\n3.pizza\n4.Powrót ");
+    public void choseProduct(){
+        this.seeStatistic.see();
+        System.out.print(this.chips.productDescription() + "\n" + this.cola.productDescription() + "\n" +
+                this.pizza.productDescription() + "\n" + this.energydrink.productDescription() + "\n5.Powrót");
         Scanner sc = new Scanner(System.in);
         this.chose = sc.nextInt();
 
@@ -42,9 +49,9 @@ public class Supermarket {
         switch (chose) {
             case 1: {
                 if (this.money.getMoney() >= this.chips.setPrice()) {
-                    hungry.addPoint(chips.setNumberOfPoints());
-                    money.shopping(chips.setPrice());
-                    System.out.println("Grr");
+                    this.hungry.addPoint(this.chips.setNumberOfPoints());
+                    this.money.shopping(this.chips.setPrice());
+                    System.out.println("Zjadłeś/aś chrupki");
                 }
                 choseProduct();
                 break;
@@ -52,9 +59,9 @@ public class Supermarket {
             }
             case 2: {
                 if (this.money.getMoney() >= this.cola.setPrice()) {
-                    hungry.addPoint(cola.setNumberOfPoints());
-                    money.shopping(cola.setPrice());
-                    System.out.println("Mlask mlask");
+                    this.hungry.addPoint(this.cola.setNumberOfPoints());
+                    this.money.shopping(this.cola.setPrice());
+                    System.out.println("Wypiłeś/aś cole");
                 }
                 choseProduct();
                 break;
@@ -63,15 +70,24 @@ public class Supermarket {
             case 3: {
 
                 if (this.money.getMoney() >= this.pizza.setPrice()) {
-                    hungry.addPoint(pizza.setNumberOfPoints());
-                    money.shopping(pizza.setPrice());
-                    System.out.println("Mnam mniam");
+                    this.hungry.addPoint(this.pizza.setNumberOfPoints());
+                    this.money.shopping(this.pizza.setPrice());
+                    System.out.println("Zjadłeś/aś pizze");
                 }
                 choseProduct();
                 break;
 
             }
             case 4: {
+                if (this.money.getMoney() >= this.energydrink.setPrice()) {
+                    this.tired.addPoint(this.energydrink.setNumberOfPoints());
+                    this.money.shopping(this.energydrink.setPrice());
+                    System.out.println("Wypiłeś/aś redbulla");
+                }
+                choseProduct();
+                break;
+            }
+            case 5: {
                 break;
 
             }

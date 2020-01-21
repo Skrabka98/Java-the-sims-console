@@ -25,7 +25,7 @@ public class SeeStatistic {
 
 
     public void see() {
-        System.out.println("Time: " + time.getTime() + "\tMoney: " + money.getMoney());
+        System.out.println("Dzień: " + time.getDay() + "\tGodzina: "+ time.getTime()+"\tMoney: " + money.getMoney());
         System.out.println("Hp: " + hp.getNumberOfPoint() + "  Hungry: " + hungry.getNumberOfPoint() + "  Stench: " + stench.getNumberOfPoint() + "  Tired: " + tired.getNumberOfPoint());
     }
 }

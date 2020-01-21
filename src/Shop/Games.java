@@ -2,9 +2,9 @@ package Shop;
 
 import Game.Money;
 import Game.Play;
+import Game.Time;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Games {
@@ -13,12 +13,14 @@ public class Games {
     private ArrayList<String> gamesList;
     private Scanner scanner;
     private int choose;
+    private Time time;
 
     public Games(Play play) {
         this.money = play.money;
         this.choose = choose;
         this.gamesList = new ArrayList<String>();
         this.scanner = new Scanner(System.in);
+        this.time = play.time;
     }
 
     public void buingGames() {
@@ -27,20 +29,38 @@ public class Games {
             System.out.println("Kupione gry:");
             System.out.println(p);
         }
-        System.out.println("1. theSims\n 2. theWither");
+
+        System.out.println("1. theSims(200)\n2. theWither(400)\n3. Star Wars(40 000)");
         choose = scanner.nextInt();
         switch (choose) {
             case 1: {
-                theSims();
-                if (this.money.getMoney() < 200) {
-                    this.gamesList.remove("theSims");
+                if ((this.money.getMoney() >= 200) && (this.gamesList.contains("theSims") == false)) {
+                    theSims();
+                } else if (this.gamesList.contains("theSims") == true) {
+                    System.out.println("Już kupiłeś tą grę");
+                } else {
+                    System.out.println("Nie masz wystarczającej ilości pieniędzy!");
                 }
+
                 break;
             }
             case 2: {
-                theWitcher();
-                if (this.money.getMoney() < 400) {
-                    this.gamesList.remove("theWither");
+                if ((this.money.getMoney() >= 400)&&(this.gamesList.contains("theWither") == false)) {
+                    theWitcher();
+                }else if (this.gamesList.contains("theWitcher") == true) {
+                    System.out.println("Już kupiłeś tą grę");
+                } else {
+                    System.out.println("Nie masz wystarczającej ilości pieniędzy!");
+                }
+                break;
+            }
+            case 3: {
+                if ((this.money.getMoney() >= 40000)&&(this.gamesList.contains("Star Wars") == false)) {
+                    starWars();
+                }else if (this.gamesList.contains("Star Wars") == true) {
+                    System.out.println("Już kupiłeś tą grę");
+                } else {
+                    System.out.println("Nie masz wystarczającej ilości pieniędzy!");
                 }
                 break;
             }
@@ -48,21 +68,41 @@ public class Games {
     }
 
 
-    public void theSims() {
+    private void theSims() {
 
-        if (this.gamesList.contains("theSims") == false) {
-            this.money.shopping(200);
-            this.gamesList.add("theSims");
 
-        } else System.out.println("Już kupiłeś tą grę!");
+        this.money.shopping(200);
+        this.gamesList.add("theSims");
+        System.out.println("Kupiłeś The Sims");
+
+
     }
 
-    public void theWitcher() {
-        if (this.gamesList.contains("theWither") == false) {
+    private void theWitcher() {
+
             this.money.shopping(400);
             this.gamesList.add("theWither");
-        } else System.out.println("Już kupiłeś tą grę!");
+        System.out.println("Kupiłeś The Witcher");
+
     }
+
+    private void starWars() {
+            this.money.shopping(40000);
+            this.gamesList.add("Star Wars");
+        System.out.println("Kupiłeś Star Wars");
+
+    }
+    public void winner(){
+        if(this.gamesList.size()==3){
+            System.out.println("Utrzymałeś nerda przy życiu i udało Ci sie kupić wszystkie gry na Steamie\n"+
+                    "Zajęło Ci to "+time.getDay()+" dni\n"+
+                    "Teraz już nie dasz rady odciągnąć Nerda od komputera, więc umrze z wycieńczenia!!!\n"+
+                    "Gratuluje, mam nadzeję że jesteś z siebie dumny!!!\n");
+            System.exit(0);
+
+        }
+    }
+
 
 
 }
