@@ -66,7 +66,6 @@ public class Player {
                 menuPlayer();
             }
             case 3: {
-                this.seeStatistic.see();
                 bath.batch();
                 menuPlayer();
                 break;

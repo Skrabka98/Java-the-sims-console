@@ -2,54 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb6ddd6-1912-4c29-bf95-a0c3fd72c1c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Shop/Food/Energydrink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Bath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Bath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Money.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Money.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Sleep.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Sleep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Time.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Game/Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Game/Work.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projekt/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Save.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Buy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Buy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Chips.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Chips.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Cola.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Cola.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Pizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Pizza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Supermarket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Food/Supermarket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Games.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Games.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Items.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Medicament/Apap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Medicament/Apap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Medicament/Bandage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Medicament/Bandage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Shop/Medicament/Pharmacy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Shop/Medicament/Pharmacy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Statistic/Hp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Statistic/Hp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Statistic/Hungry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Statistic/Hungry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Statistic/SeeStatistic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Statistic/SeeStatistic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Statistic/Statistic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Statistic/Statistic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/Statistic/Stench.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projekt/Statistic/Stench.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projekt/save.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/save.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Money.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Work.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/SetNumberOfPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/SetNumberOfPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/SetPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/SetPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Sleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Sleep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Buy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Buy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Food/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Food/Chips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Food/Cola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Food/Cola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Food/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Food/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Food/Supermarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Food/Supermarket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Games.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Medicament/Apap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Medicament/Apap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Medicament/Bandage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Medicament/Bandage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop/Medicament/Pharmacy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop/Medicament/Pharmacy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistic/Hp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistic/Hp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistic/SeeStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistic/SeeStatistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistic/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistic/Statistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/save.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +80,7 @@
       <workItem from="1579459805161" duration="3203000" />
       <workItem from="1579471675269" duration="4399000" />
       <workItem from="1579544772221" duration="6515000" />
-      <workItem from="1579629499320" duration="13476000" />
+      <workItem from="1579629499320" duration="15052000" />
     </task>
     <servers />
   </component>

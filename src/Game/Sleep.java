@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Sleep implements SetNumberOfPoints {
 
+    private final int maxSleepHour = 16;
     private Scanner scanner;
     private int numberOfSleep;
     private Play play;
@@ -16,6 +17,7 @@ public class Sleep implements SetNumberOfPoints {
     private Stench stench;
     private Hungry hungry;
     private Time time;
+    final private int value = 5;//ilość głodu i smrodu na godzine
 
 
     public Sleep(Play play) {
@@ -35,10 +37,14 @@ public class Sleep implements SetNumberOfPoints {
 
 
     public void sleeping(int sleepHour) {
+        if(sleepHour<=maxSleepHour){
         this.tired.addPoint(sleepHour * setNumberOfPoints());
-        this.stench.loosOfPoints(sleepHour * setNumberOfPoints());
-        this.hungry.loosOfPoints(sleepHour * setNumberOfPoints());
-        this.time.addTime(sleepHour);
+        this.stench.loosOfPoints(sleepHour * value);
+        this.hungry.loosOfPoints(sleepHour * value);
+        this.time.addTime(sleepHour);}
+        else{
+            System.out.println("Możesz spać tylko "+maxSleepHour+" godzin!");
+        }
     }
 
 }
