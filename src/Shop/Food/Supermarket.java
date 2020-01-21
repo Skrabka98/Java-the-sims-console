@@ -7,6 +7,7 @@
  import Statistic.Hungry;
 
  import java.io.IOException;
+ import java.util.InputMismatchException;
  import java.util.Scanner;
 
 
@@ -38,32 +39,37 @@
   public void choseProduct() throws IOException {
    System.out.println("1.chips\n2.cola\n3.pizza\n4.Powrót ");
    Scanner sc=new Scanner(System.in);
-   this.chose=sc.nextInt();
+  this.chose=sc.nextInt();
 
 
    switch (chose){
     case 1 :
      {
-      hungry.addPoint(chips.setNumberOfPoints());
-      money.shopping(chips.setPrice());
-      System.out.println("Grr");
+      if(this.money.getMoney()>=this.chips.setPrice()){
+       hungry.addPoint(chips.setNumberOfPoints());
+       money.shopping(chips.setPrice());
+       System.out.println("Grr");
+      }
       choseProduct();
       break;
 
      }
     case 2:
     {
+     if(this.money.getMoney()>=this.cola.setPrice()){
      hungry.addPoint(cola.setNumberOfPoints());
      money.shopping(cola.setPrice());
-     System.out.println("Mlask mlask");
+     System.out.println("Mlask mlask");}
      choseProduct();
      break;
 
     }
     case 3: {
-     hungry.addPoint(pizza.setNumberOfPoints());
+
+     if(this.money.getMoney()>=this.pizza.setPrice()){
+      hungry.addPoint(pizza.setNumberOfPoints());
      money.shopping(pizza.setPrice());
-     System.out.println("Mnam mniam");
+     System.out.println("Mnam mniam");}
      choseProduct();
      break;
 

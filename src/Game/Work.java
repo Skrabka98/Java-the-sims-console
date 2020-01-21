@@ -39,21 +39,19 @@ public class Work {
   public void workingFullTime(){
     this.time.addTime(fullTimeWork);
     this.money.salary(salaryW+bonus);
-    this.tired.loosOfPoints(60);
-    this.stench.loosOfPoints(fullTimeWork*5);
-    this.hungry.loosOfPoints(fullTimeWork*4);
+    this.tired.loosOfPoints(40);
+    this.stench.loosOfPoints(40);
+    this.hungry.loosOfPoints(40);
     this.hp.loosOfPoints(randomPoint());
     System.out.println(time.getTime());
   }
-  public void xxx(){
-    System.out.println(time.getTime());
-  }
+
   public void workingHalfTime(){
     this.time.addTime(halfTimeWork);
     this.money.salary((salaryW/2));
-    this.tired.loosOfPoints(30);
-    this.stench.loosOfPoints(halfTimeWork*5);
-    this.hungry.loosOfPoints(halfTimeWork*4);
+    this.tired.loosOfPoints(20);
+    this.stench.loosOfPoints(20);
+    this.hungry.loosOfPoints(20);
     this.hp.loosOfPoints(randomPoint());
   }
 
@@ -64,17 +62,21 @@ public class Work {
 
 
   public void workingHours(int choiceHoursWork){
-    if(choiceHoursWork == 4){
-      workingHalfTime();
+      if((choiceHoursWork == 4)){
+        workingHalfTime();
         System.out.println("Idziesz do parcy na 4h");
-    }else if (choiceHoursWork == 8){
-      workingFullTime();
+      }else if (choiceHoursWork == 8){
+        workingFullTime();
         System.out.println("Idziesz do pracy na 8h");
-    }else{
-      System.out.println("Możesz iść do pracy tylko na cztery lub osiem godzin");
-    }
+      }else{
+        System.out.println("Możesz iść do pracy tylko na cztery lub osiem godzin");
+      }
+
+
   }
+ private void canWork(int cos) {
 
 
+  }
 
 }

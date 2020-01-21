@@ -9,6 +9,7 @@ import Statistic.Stench;
 import Statistic.Tired;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -20,9 +21,11 @@ public class Main {
         Supermarket supermarket = new Supermarket(play);
         Pharmacy pharmacy = new Pharmacy(play);
         Buy buy = new Buy(play);
+        Games games = new Games(play);
 
-        Player player = new Player(work, sleep, bath, seeStatistic, buy);
+        Player player = new Player(work, sleep, bath, seeStatistic, buy,games);
         player.menuPlayer();
+
 
 
 

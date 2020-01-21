@@ -6,6 +6,7 @@ import Shop.Buy;
 import Statistic.Hp;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Pharmacy {
@@ -30,22 +31,26 @@ public class Pharmacy {
     public void choseProduct() throws IOException {
         System.out.println("1.apap \n2.bandage");
         Scanner sc=new Scanner(System.in);
-        this.chose=sc.nextInt();
+       this.chose=sc.nextInt();
+
         switch (chose){
             case 1 :
             {
-                this.hp.addPoint(this.apap.setNumberOfPoints());
+                if(this.money.getMoney()>=this.apap.setPrice()){
                 this.money.shopping(this.apap.setPrice());
-                System.out.println("Dynamite!");
+                this.hp.addPoint(this.apap.setNumberOfPoints());
+
+                System.out.println("Dynamite!");}
                 break;
 
             }
             case 2:
             {
-                hp.addPoint(bandage.setNumberOfPoints());
-                money.shopping(bandage.setPrice());
-                System.out.println("Ałaaa");
-                break;
+                if(this.money.getMoney()>=this.bandage.setPrice()){
+                    hp.addPoint(bandage.setNumberOfPoints());
+                    money.shopping(bandage.setPrice());
+                    System.out.println("Ałaaa");
+                }break;
 
             }
             case 3:
