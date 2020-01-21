@@ -22,19 +22,8 @@ public class Main {
         Pharmacy pharmacy = new Pharmacy(play);
         Buy buy = new Buy(play);
         Games games = new Games(play);
-
-        Player player = new Player(work, sleep, bath, seeStatistic, buy,games);
+        Player player = new Player(work, sleep, bath, seeStatistic, buy, games);
         player.menuPlayer();
-
-
-
-
-
-
-
-
-
-
 
 
     }

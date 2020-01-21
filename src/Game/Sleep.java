@@ -18,27 +18,26 @@ public class Sleep implements SetNumberOfPoints {
     private Time time;
 
 
-    public Sleep (Play play){
-     this.scanner=new Scanner(System.in);
-     this.numberOfSleep= numberOfSleep;
-     this.play = play;
-     this.tired = play.tired;
-     this.stench = play.stench;
-     this.hungry = play.hungry;
-     this.time = play.time;
+    public Sleep(Play play) {
+        this.scanner = new Scanner(System.in);
+        this.numberOfSleep = numberOfSleep;
+        this.play = play;
+        this.tired = play.tired;
+        this.stench = play.stench;
+        this.hungry = play.hungry;
+        this.time = play.time;
     }
 
 
-    public  int setNumberOfPoints(){
+    public int setNumberOfPoints() {
         return 10;
     } // iość punktów o jaką jest zwiększany sen na godzinę
 
 
-
-    public void sleeping(int sleepHour){
-        this.tired.addPoint(sleepHour*setNumberOfPoints());
-        this.stench.loosOfPoints(sleepHour*setNumberOfPoints());
-        this.hungry.loosOfPoints(sleepHour*setNumberOfPoints());
+    public void sleeping(int sleepHour) {
+        this.tired.addPoint(sleepHour * setNumberOfPoints());
+        this.stench.loosOfPoints(sleepHour * setNumberOfPoints());
+        this.hungry.loosOfPoints(sleepHour * setNumberOfPoints());
         this.time.addTime(sleepHour);
     }
 

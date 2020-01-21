@@ -1,10 +1,10 @@
 package Game;
 
 public class Money {
-    private double money = 4;
+    private double money = 200;
 
-    public Money(){
-       this.money=money;
+    public Money() {
+        this.money = money;
     }
 
     public double getMoney() {
@@ -15,13 +15,13 @@ public class Money {
         this.money += salary;
     }
 
-    public void shopping(double price){
+    public void shopping(double price) {
         //double cash = this.money;
-        if((this.money-price)<=0){
+        if ((this.money - price) <= 0) {
             System.out.println("Nie masz wystarczającej ilości pieniędzy.");
 
-        }else{
-            this.money-=price;
+        } else {
+            this.money -= price;
 
         }
 

@@ -13,7 +13,7 @@ public class SeeStatistic {
     private Time time;
     private Play play;
 
-    public SeeStatistic(Play play){
+    public SeeStatistic(Play play) {
         this.play = play;
         this.hp = play.hp;
         this.hungry = play.hungry;
@@ -24,10 +24,8 @@ public class SeeStatistic {
     }
 
 
-
-
-    public void see(){
-       System.out.println("Time: "+time.getTime()+"\tMoney: "+money.getMoney());
-       System.out.println("Hp: "+hp.getNumberOfPoint()+"  Hungry: "+hungry.getNumberOfPoint()+"  Stench: "+stench.getNumberOfPoint()+"  Tired: "+tired.getNumberOfPoint());
+    public void see() {
+        System.out.println("Time: " + time.getTime() + "\tMoney: " + money.getMoney());
+        System.out.println("Hp: " + hp.getNumberOfPoint() + "  Hungry: " + hungry.getNumberOfPoint() + "  Stench: " + stench.getNumberOfPoint() + "  Tired: " + tired.getNumberOfPoint());
     }
 }

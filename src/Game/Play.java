@@ -13,7 +13,7 @@ public class Play {
     public Tired tired;
     public Money money;
 
-    public Play(){
+    public Play() {
         this.time = new Time();
         this.hp = new Hp();
         this.hungry = new Hungry();

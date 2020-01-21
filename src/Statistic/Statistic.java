@@ -2,31 +2,30 @@ package Statistic;
 
 abstract public class Statistic {
 
-    private final int maxPoint = 100 ;
+    private final int maxPoint = 100;
     private final int minPoint = 0;
-    public int numberOfPoint ;
+    public int numberOfPoint;
 
-    Statistic( int numberOfPoint){
-        this.numberOfPoint = 30;
+    Statistic(int numberOfPoint) {
+        this.numberOfPoint = 1;
     }
 
 
-
-    public int addPoint (int numberOfPoint) {
+    public int addPoint(int numberOfPoint) {
         this.numberOfPoint += numberOfPoint;
-        if(this.numberOfPoint>= maxPoint){
-            return this.numberOfPoint=maxPoint;
-        }else {
+        if (this.numberOfPoint >= maxPoint) {
+            return this.numberOfPoint = maxPoint;
+        } else {
             return this.numberOfPoint;
         }
 
     }
 
-    public int loosOfPoints(int numberOfPoint){
-        this.numberOfPoint-= numberOfPoint;
-        if(this.numberOfPoint<= minPoint){
-            return this.numberOfPoint=minPoint;
-        }else {
+    public int loosOfPoints(int numberOfPoint) {
+        this.numberOfPoint -= numberOfPoint;
+        if (this.numberOfPoint <= minPoint) {
+            return this.numberOfPoint = minPoint;
+        } else {
             return this.numberOfPoint;
         }
     }
@@ -38,7 +37,6 @@ abstract public class Statistic {
     public int getNumberOfPoint() {
         return numberOfPoint;
     }
-
 
 
 }

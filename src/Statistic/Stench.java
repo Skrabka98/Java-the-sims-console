@@ -1,12 +1,13 @@
 package Statistic;
 
-public class Stench extends Statistic  {
+public class Stench extends Statistic {
 
-    public Stench ( int numberOfPoint){
-        super(numberOfPoint);}
+    public Stench(int numberOfPoint) {
+        super(numberOfPoint);
+    }
 
-    public Stench(){
-        super (0);
+    public Stench() {
+        super(0);
     }
 
 }
