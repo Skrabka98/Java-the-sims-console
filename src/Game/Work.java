@@ -62,6 +62,7 @@ public class Work {
 
 
   public void workingHours(int choiceHoursWork){
+    if(((choiceHoursWork*5)<this.tired.getNumberOfPoint())&&((choiceHoursWork*5)<this.hungry.getNumberOfPoint())&&((choiceHoursWork*5)<this.stench.getNumberOfPoint())){
       if((choiceHoursWork == 4)){
         workingHalfTime();
         System.out.println("Idziesz do parcy na 4h");
@@ -70,12 +71,13 @@ public class Work {
         System.out.println("Idziesz do pracy na 8h");
       }else{
         System.out.println("Możesz iść do pracy tylko na cztery lub osiem godzin");
-      }
+      }}
+    else System.out.println("Chujumuju");
 
 
   }
  private void canWork(int cos) {
-
+     //coś mądrego
 
   }
 

@@ -7,7 +7,7 @@ abstract public class Statistic {
     public int numberOfPoint ;
 
     Statistic( int numberOfPoint){
-        this.numberOfPoint = maxPoint;
+        this.numberOfPoint = 30;
     }
 
 
@@ -38,5 +38,7 @@ abstract public class Statistic {
     public int getNumberOfPoint() {
         return numberOfPoint;
     }
+
+
 
 }
