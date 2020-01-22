@@ -25,43 +25,38 @@ public class Work {
 
     public Work(Play play) {
         this.play = play;
-        this.time = play.time;
-        this.money = play.money;
-        this.tired = play.tired;
-        this.stench = play.stench;
-        this.hungry = play.hungry;
         this.rand = new Random();
-        this.hp = play.hp;
-        this.accidentAtWork = accidentAtWork;
+        this.accidentAtWork = 0;
     }
 
 
     public void workingFullTime() {
-        this.time.addTime(fullTimeWork);
-        this.money.salary(salaryW + bonus);
-        this.tired.loosOfPoints(40);
-        this.stench.loosOfPoints(40);
-        this.hungry.loosOfPoints(40);
-        this.hp.loosOfPoints(randomPoint());
+        this.play.time.addTime(fullTimeWork);
+        this.play.money.salary(salaryW + bonus);
+        this.play.tired.loosOfPoints(40);
+        this.play.stench.loosOfPoints(40);
+        this.play.hungry.loosOfPoints(40);
+        this.play.hp.loosOfPoints(randomPoint());
     }
 
     public void workingHalfTime() {
-        this.time.addTime(halfTimeWork);
-        this.money.salary((salaryW / 2));
-        this.tired.loosOfPoints(20);
-        this.stench.loosOfPoints(20);
-        this.hungry.loosOfPoints(20);
-        this.hp.loosOfPoints(randomPoint());
+        this.play.time.addTime(halfTimeWork);
+        this.play.money.salary((salaryW / 2));
+        this.play.tired.loosOfPoints(20);
+        this.play.stench.loosOfPoints(20);
+        this.play.hungry.loosOfPoints(20);
+        this.play.hp.loosOfPoints(randomPoint());
     }
 
     public int randomPoint() {
         this.accidentAtWork = this.rand.nextInt(11) + 1;
         return this.accidentAtWork;
+//        return  new Random().nextInt(11)+1;
     }
 
 
     public void workingHours(int choiceHoursWork) {
-        if (((choiceHoursWork * 5) < this.tired.getNumberOfPoint()) && ((choiceHoursWork * 5) < this.hungry.getNumberOfPoint()) && ((choiceHoursWork * 5) < this.stench.getNumberOfPoint())) {
+        if (((choiceHoursWork * 5) < this.play.tired.getNumberOfPoint()) && ((choiceHoursWork * 5) < this.play.hungry.getNumberOfPoint()) && ((choiceHoursWork * 5) < this.play.stench.getNumberOfPoint())) {
             if ((choiceHoursWork == 4)) {
                 workingHalfTime();
                 System.out.println("Idziesz do parcy na 4h");

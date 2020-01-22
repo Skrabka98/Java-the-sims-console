@@ -35,8 +35,6 @@ public class Player {
         this.buy = buy;
         this.games = games;
         this.seeStatistic = seeStatistic;
-        this.hp = play.hp;
-        this.time = play.time;
 
     }
 
@@ -71,7 +69,7 @@ public class Player {
                 break;
             }
             case 4: {
-                if (play.time.timeOfDay() == true) {
+                if (this.play.time.timeOfDay() == true) {
                     this.seeStatistic.see();
                     this.buy.buying();
                 } else {

@@ -17,13 +17,11 @@ public class Main {
         Player player = new Player(work, sleep, bath, seeStatistic, buy, games, play);
         System.out.println("Witaj w symulatorze Nerda!\nAby przejść grę musisz wykupić wszystkie gry na Steamie.\nNie daj Nerdowi umrzeć!\nPowodzenia!\n");
         do{
-        try {
-            player.menuPlayer();
-        } catch (InputMismatchException e) {
-            System.out.println("Wybierz odpowiedni numer!");
-        }
+            try {
+                player.menuPlayer();
+            } catch (InputMismatchException e) {
+                System.out.println("Wybierz odpowiedni numer!");
+            }
         }while(true);
-
-
     }
 }

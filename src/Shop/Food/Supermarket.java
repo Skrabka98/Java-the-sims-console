@@ -25,14 +25,11 @@ public class Supermarket {
 
     public Supermarket(Play play) {
         this.play = play;
-        this.chose = chose;
+        this.chose = 0;
         this.chips = new Chips();
         this.cola = new Cola();
         this.pizza = new Pizza();
         this.energydrink = new Energydrink();
-        this.hungry = play.hungry;
-        this.money = play.money;
-        this.tired = play.tired;
         this.seeStatistic = new SeeStatistic(play);
 
     }
@@ -48,9 +45,9 @@ public class Supermarket {
 
         switch (chose) {
             case 1: {
-                if (this.money.getMoney() >= this.chips.setPrice()) {
-                    this.hungry.addPoint(this.chips.setNumberOfPoints());
-                    this.money.shopping(this.chips.setPrice());
+                if (this.play.money.getMoney() >= this.chips.setPrice()) {
+                    this.play.hungry.addPoint(this.chips.setNumberOfPoints());
+                    this.play.money.shopping(this.chips.setPrice());
                     System.out.println("Zjadłeś/aś chrupki");
                 }
                 choseProduct();
@@ -58,9 +55,9 @@ public class Supermarket {
 
             }
             case 2: {
-                if (this.money.getMoney() >= this.cola.setPrice()) {
-                    this.hungry.addPoint(this.cola.setNumberOfPoints());
-                    this.money.shopping(this.cola.setPrice());
+                if (this.play.money.getMoney() >= this.cola.setPrice()) {
+                    this.play.hungry.addPoint(this.cola.setNumberOfPoints());
+                    this.play.money.shopping(this.cola.setPrice());
                     System.out.println("Wypiłeś/aś cole");
                 }
                 choseProduct();

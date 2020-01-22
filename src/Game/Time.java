@@ -5,8 +5,6 @@ public class Time {
     private int day = 1;
 
     public Time() {
-        this.hour = hour;
-        this.day = day;
     }
 
     public boolean timeOfDay() { //sprawdza czy dzień czy noc

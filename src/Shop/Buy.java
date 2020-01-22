@@ -3,20 +3,18 @@ package Shop;
 import Game.Play;
 import Shop.Food.Supermarket;
 import Shop.Medicament.Pharmacy;
-
 import java.util.Scanner;
 
 public class Buy {
     private int choseing;
     private Supermarket supermarket;
     private Pharmacy pharmacy;
-    private Play play;
+
 
     public Buy(Play play) {
-        this.choseing = choseing;
+        this.choseing = 0;
         this.supermarket = new Supermarket(play);
         this.pharmacy = new Pharmacy(play);
-
 
     }
 

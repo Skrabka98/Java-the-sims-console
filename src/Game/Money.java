@@ -4,7 +4,7 @@ public class Money {
     private double money = 100;
 
     public Money() {
-        this.money = money;
+
     }
 
     public double getMoney() {
