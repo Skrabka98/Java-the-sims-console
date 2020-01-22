@@ -66,9 +66,9 @@ public class Supermarket {
             }
             case 3: {
 
-                if (this.money.getMoney() >= this.pizza.setPrice()) {
-                    this.hungry.addPoint(this.pizza.setNumberOfPoints());
-                    this.money.shopping(this.pizza.setPrice());
+                if (this.play.money.getMoney() >= this.pizza.setPrice()) {
+                    this.play.hungry.addPoint(this.pizza.setNumberOfPoints());
+                    this.play.money.shopping(this.pizza.setPrice());
                     System.out.println("Zjadłeś/aś pizze");
                 }
                 choseProduct();
@@ -76,9 +76,9 @@ public class Supermarket {
 
             }
             case 4: {
-                if (this.money.getMoney() >= this.energydrink.setPrice()) {
-                    this.tired.addPoint(this.energydrink.setNumberOfPoints());
-                    this.money.shopping(this.energydrink.setPrice());
+                if (this.play.money.getMoney() >= this.energydrink.setPrice()) {
+                    this.play.tired.addPoint(this.energydrink.setNumberOfPoints());
+                    this.play.money.shopping(this.energydrink.setPrice());
                     System.out.println("Wypiłeś/aś redbulla");
                 }
                 choseProduct();
